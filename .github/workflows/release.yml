@@ -32,7 +32,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:${{ github.ref | replace('refs/tags/', '') }}
+        tags: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:latest
 
     - name: Create Release
       id: create_release
